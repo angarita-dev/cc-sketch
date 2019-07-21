@@ -1,0 +1,28 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+header {
+  background-color: $bg-light;
+  width: 100%;
+  .txt-cont {
+    padding: 1%;
+    width:  70.901%; // 960/1354
+    margin: 0 auto;
+    @include flex-center-row;
+    justify-content: space-between;
+    color: $txt-dark;
+    height: auto;
+    font-size: 1.5rem;
+    .logo-const {
+      height: 100px;
+    }
+  }
+}
+
+.header-text {
+  height: auto;
+  margin: auto 0;
+  .highlight {
+    font-weight: 800;
+  }
+}
