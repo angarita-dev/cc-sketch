@@ -4,9 +4,9 @@ See the deploy [here]()
 
 ### To Do:
 
-- [*] Layout
+- [X] Layout
 - [ ] Media Queries
-- [*] Static images
-- [*] Color pallete (in file)
+- [X] Static images
+- [X] Color pallete (in file)
 - [ ] Contact me form
-- [*] Go to form button
+- [X] Go to form button
