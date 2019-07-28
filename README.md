@@ -1,6 +1,6 @@
 ## CC Sketch
 
-See the deploy [here]()
+See the deploy [here](https://rawcdn.githack.com/codingAngarita/cc-sketch/92489db914a536ffd5b6b93c4bb33a16699617f7/index.html)
 
 ### To Do:
 
