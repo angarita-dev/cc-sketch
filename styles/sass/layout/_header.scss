@@ -4,6 +4,7 @@
 header {
   background-color: $bg-light;
   width: 100%;
+  border-bottom: 1vh solid $highlight;
   .txt-cont {
     padding: 1%;
     width:  70.901%; // 960/1354
@@ -11,18 +12,18 @@ header {
     @include flex-center-row;
     justify-content: space-between;
     color: $txt-dark;
-    height: auto;
-    font-size: 1.5rem;
     .logo-const {
       height: 100px;
     }
-  }
-}
-
-.header-text {
-  height: auto;
-  margin: auto 0;
-  .highlight {
-    font-weight: 800;
+    .header-text {
+      height: auto;
+      font-size: 1.5rem;
+      height: auto;
+      margin: auto 0;
+      .highlight {
+        font-weight: 800;
+        color: $txt-dark-strong;
+      }
+    }
   }
 }

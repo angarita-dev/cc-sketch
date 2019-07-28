@@ -1,0 +1,104 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.banner-contact {
+  @include flex-center-row;
+  background-color: $bg-dark-grey;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.6),
+      rgba(0,0,0,0.6)
+    ),
+    url(../../images/r-render.jpg),
+    50% 50% no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  border-bottom: 1vh solid $highlight;
+  .contact-col {
+    width: 40vw;
+    @include flex-center-col;
+  }
+  .info-container {
+    text-align: center;
+    margin: 30vh 5vw 30vh 10vw;
+    .logo-proj {
+      height: 130px;
+      width: 100px;
+      margin: 0 auto;
+    }
+    .text-container {
+      color: $txt-light;
+      h4 {
+        color: $txt-light-strong;
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 2%;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1.25%;
+      }
+    }
+  }
+  .contact-container {
+    width: 30vw;
+    margin: 20vh 20vw 10vh 5vw;
+    background-color: $bg-light;
+    p {
+      line-height: 1.4rem;
+      margin: 10%;
+      color: $txt-dark;
+      text-align: center;
+      .highlight {
+        font-weight: 700;
+        color: $txt-dark-strong;
+      }
+    }
+    .contact-form {
+      padding: 0 7% 10%;
+      @include flex-center-col;
+      fieldset {
+        @include flex-center-col;
+        label {
+          margin: 1rem 0;
+          color: $txt-dark-strong;
+        }
+        input {
+          margin-bottom: 0.5rem;
+          border: none;
+          border-bottom: 1px solid $bg-dark-grey;
+          background-color: $bg-light;
+          &:valid {
+            border-bottom: 1px solid $highlight;
+          }
+          &:invalid {
+            border: none;
+            box-shadow: none;
+            border-bottom: 1px solid $super-high;
+          }
+        }
+      }
+      .terms-container {
+        flex-direction: row;
+        align-content: center;
+        text-align: center;
+        .terms {
+          margin-bottom: 1.2rem;
+          font-size: 0.8rem;
+          color: $txt-dark;
+        }
+      }
+      .subm {
+        background-color: $super-high;
+        color: $txt-dark-strong;
+        font-weight: 800;
+        font-size: 1.3rem;
+        border: none;
+        padding: 3% 8%;
+        border-radius: 5%;
+        margin: 0 auto;
+        width: auto;
+      }
+    }
+  }
+}

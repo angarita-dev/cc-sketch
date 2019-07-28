@@ -1,0 +1,49 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+.ft-container {
+  width: 80%;
+  margin: 5% auto;
+  @include flex-center-row;
+  .feature {
+    width: 50%;
+    height: 200px;
+  }
+  .txt-cont {
+    width: 50%;
+    ul {
+      width: 80%;
+      text-align: left;
+      padding: 0 10%;
+      margin-bottom: 5%;
+      li {
+        width: 100%;
+        p {
+          width: 100%;
+          color: $txt-dark;
+          margin: 5% 0 0;
+          i {
+            margin-right: 3%;
+            color: $super-high;
+            font-size: 1.4rem;
+          }
+          span {
+            color: $txt-dark-strong;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+  }
+  .txt-cont-l {
+    ul {
+      text-align: left;
+    }
+  }
+  .button-container {
+    margin-top: 12%;
+    a {
+      padding: 7% 10%;
+    }
+  }
+}

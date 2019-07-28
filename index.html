@@ -3,7 +3,8 @@
    <head>
       <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
-      <link rel="stylesheet" type="text/css" href="./styles/style.css">
+      <link rel="stylesheet" type="text/css" href="styles/sass/main.css">
+      <script src="https://kit.fontawesome.com/9009e145cd.js"></script>
       <title>CC Sketch</title>
    </head>
    <body>
@@ -15,7 +16,7 @@
       </header>
       <main>
          <div class="banner-contact">
-            <div class="info-container">
+            <div class="info-container contact-col">
                <img class="logo-proj" src="./images/tux.png">
                <div class="text-container">
                   <h4>Lorem ipsum</h4>
@@ -23,53 +24,79 @@
                   <p>Fusce id interdum odio. Sed interdum quam a tellus tempor varius. Pellentesque mi lorem, consectetur vel augue ut, aliquam hendrerit nibh. </p>
                </div>
             </div>
-            <div class="contact-container">
-               <p><span class="highlight">Maecenas semper justo maximus</span> commodo efficitur. Etiam pellentesque, mi luctus viverra suscipit, libero ipsum luctus justo</p>
-               <form class="contact-form"></form>
+            <div class="contact-container contact-col" id="contact">
+               <p><span class="highlight">Maecenas semper justo</span> maximus commodo efficitur. Etiam pellentesque mi luctus viverra suscipit.</p>
+               <form action="" class="contact-form">
+                  <fieldset>
+                     <label for="fstname">¿maximus commodo efficitur?</label>
+                     <input id="fstname" type="text" pattern="[A-Za-z0-9]{1,20}" placeholder="Nombre" required>
+                     <label for="lstname">¿maximus commodo efficitur?</label>
+                     <input id="lstname" type="text" pattern="[A-Za-z0-9]{1,20}" placeholder="Apellido" required>
+                     <label for="email">¿maximus commodo efficitur?</label>
+                     <input id="email" type="email" placeholder="email@email.com" required>
+                     <label for="tel">¿maximus commodo efficitur?</label>
+                     <input id="tel" type="tel" placeholder="0123456789" pattern="[0-9]{7,13}" required>
+                     <label for="msg">¿maximus commodo efficitur?</label>
+                     <input id="msg" type="text" pattern="[A-Za-z0-9]{1,200}" placeholder="Comentario" required>
+                  </fieldset>
+                  <fieldset class="terms-container">
+                     <input type="checkbox" name="checkbox" value="check" id="agree" required/>
+                     <label for="agree" class="terms">Acepto los terminos y condiciones.</label>
+                  </fieldset>
+                  <input type="submit" value="Enviar" class="subm">
+               </form>
             </div>
          </div>
-         <div class="banner-center-bg-1">
+         <div class="banner-center bg-1">
             <h2 class="emph-color-1">Phasellus varius, nisl nec maximus facilisis, dui ipsum condimentum orci</h2>
             <p><span class="highlight">Donec in urna sit amet mi viverra venenatis</span> dictum ac sem. Quisque ut libero tempor, lobortis ipsum at, vulputate nisl. <span class="highlight">Donec in urna sit amet mi viverra venenatis</span> Ut nec condimentum nulla.</p>
          </div>
-         <div class="banner-center-bg-2">
+         <div class="banner-center bg-2">
             <h2 class="emph-color-1">Phasellus varius, nisl nec maximus facilisis, dui ipsum condimentum orci</h2>
             <p><span class="highlight">Donec in urna sit amet mi viverra venenatis</span> dictum ac sem. Quisque ut libero tempor, lobortis ipsum at, vulputate nisl.</p>
-            <img class="b-render" alt="" src="./images/tux.png">
-            <h2 class="emph-color-1">nisl nec maximus facilisis, dui ipsum condimentum orci</h2>
-            <h2 class="emph-color-1">nisl nec maximus facilisis, dui ipsum condimentum orci</h2>
-            <a class="go-contact">Lorem!</a>
+            <img class="b-render" alt="" src="./images/plan-render.png">
+            <h2 class="emph-color-1">nisl nec maximus facilisis 123m2</h2>
+            <h2 class="emph-color-1">nisl nec maximus facilisis 23m2</h2>
+            <div class="button-container">
+               <a class="go-contact" href="#contact">Contacto</a>
+            </div>
          </div>
-         <div class="banner-center-bg-1">
+         <div class="banner-center bg-1">
             <h2 class="emph-color-1">Phasellus varius, nisl nec maximus facilisis, dui ipsum condimentum orci</h2>
-            <div class="ft-container-r">
-               <img class="feature" alt="" src="./images/tux.png">
+            <div class="ft-container">
+               <img class="feature" alt="" src="./images/r2-render.jpg">
                <div class="txt-cont">
                   <ul>
-                     <li><p>feature #1</p></li>
-                     <li><p>feature #2</p></li>
+                     <li><p><i class="fas fa-caret-right"></i>Phasellus varius, <span>nisl nec maximus facilisis</span></p></li>
+                     <li><p><i class="fas fa-caret-right"></i><span>Phasellus varius,</span> nisl nec maximus facilisis</p></li>
                   </ul>
-                  <a class="go-contact">Lorem!</a>
+                  <div class="button-container">
+                     <a class="go-contact" href="#contact">Contacto</a>
+                  </div>
                </div>
             </div>
-            <div class="ft-container-l">
-               <div class="txt-cont">
+            <div class="ft-container">
+               <div class="txt-cont txt-cont-l">
                   <ul>
-                     <li><p>feature #1</p></li>
-                     <li><p>feature #2</p></li>
+                     <li><p><i class="fas fa-caret-right"></i>Phasellus varius, <span>nisl nec maximus facilisis</span></p></li>
+                     <li><p><i class="fas fa-caret-right"></i><span>Phasellus varius,</span> nisl nec maximus facilisis</p></li>
                   </ul>
-                  <a class="go-contact">Lorem!</a>
+                  <div class="button-container">
+                     <a class="go-contact" href="#contact">Contacto</a>
+                  </div>
                </div>
-               <img class="feature" alt="" src="./images/tux.png">
+               <img class="feature" alt="" src="./images/r2-render.jpg">
             </div>
          </div>
          <div class="location">
-            <h2 class="emph-color-2"></h2>
+            <h2>Ubicación</h2>
             <div class="location-container">
-               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641093977!2d-74.24789637391757!3d4.648283716835267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1563744560388!5m2!1ses-419!2sco" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.51641093977!2d-74.24789637391757!3d4.648283716835267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1563744560388!5m2!1ses-419!2sco" frameborder="0" allowfullscreen></iframe>
                <div class="txt-cont">
-                  <h2 class="emph-color-2">maximus facilisis, dui ipsum condimentum orci</h2>
-                  <a class="go-contact">Lorem!</a>
+                  <h3 class="emph-color-2">Maximus facilisis, dui ipsum condimentum orci</h3>
+                  <div class="button-container">
+                     <a class="go-contact" href="#contact">Contacto</a>
+                  </div>
                </div>
             </div>
          </div>
